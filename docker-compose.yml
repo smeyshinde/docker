@@ -1,0 +1,10 @@
+services:
+   services:
+   staticapp:
+     build: .
+     ports:
+      - "80:80"
+     volume:
+     - .:/app
+     network:
+      - default
